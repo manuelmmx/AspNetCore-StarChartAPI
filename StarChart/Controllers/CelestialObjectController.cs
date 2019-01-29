@@ -89,7 +89,7 @@ namespace StarChart.Controllers
         }
 
         [HttpPatch("{id}/{name}")]
-        public IActionResult Rename(int id, string name)
+        public IActionResult RenameObject(int id, string name)
         {
             var co = _context.CelestialObjects.FirstOrDefault(i => i.Id == id);
             if (co == null)
